@@ -1,0 +1,51 @@
+
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_KEY }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET }}
+        aws-region: us-east-1
+    
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v39
+      
+    - name: Sync changed files to S3
+      run: |
+        if [ -n "${{ steps.changed-files.outputs.all_changed_files }}" ]; then
+          echo "Changed files: ${{ steps.changed-files.outputs.all_changed_files }}"
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [ -f "$file" ]; then
+              echo "Uploading $file to S3"
+              aws s3 cp "$file" "s3://gridfall.online/$file" --acl public-read --cache-control "max-age=31536000"
+            fi
+          done
+        else
+          echo "No files changed"
+        fi
+    
+    # - name: Create CloudFront invalidation
+    #   run: |
+    #     echo "Creating CloudFront invalidation for distribution E2R5BJ97ESU08A"
+    #     aws cloudfront create-invalidation --distribution-id E2R5BJ97ESU08A --paths "/*"
+    #     echo "CloudFront invalidation created successfully"
+
+  
