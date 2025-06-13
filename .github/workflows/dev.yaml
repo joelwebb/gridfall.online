@@ -42,10 +42,10 @@ jobs:
           echo "No files changed"
         fi
     
-    # - name: Create CloudFront invalidation
-    #   run: |
-    #     echo "Creating CloudFront invalidation for distribution E2R5BJ97ESU08A"
-    #     aws cloudfront create-invalidation --distribution-id E2R5BJ97ESU08A --paths "/*"
-    #     echo "CloudFront invalidation created successfully"
+    - name: Create CloudFront invalidation
+      run: |
+        echo "Updating CloudFront invalidation for distribution E2I7BSCOOJLP1Q"
+        aws cloudfront create-invalidation --distribution-id E2I7BSCOOJLP1Q --paths "/*"
+        echo "CloudFront Files Updated Successfully"
 
   
