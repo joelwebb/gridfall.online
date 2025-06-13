@@ -96,22 +96,8 @@
                                 <li>
                                     <a
                                         class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                                        href="about.html"
-                                        >About</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                                        href="blog.html"
-                                        >Blog</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                                        href="testimonials.html"
-                                        >Testimonials</a
+                                        href="contact.html"
+                                        >Support</a
                                     >
                                 </li>
                                 <!-- 1st level: hover -->
@@ -130,7 +116,7 @@
                                         @focusout="open = false"
                                         @click.prevent
                                     >
-                                        Resources
+                                        Lore
                                         <svg
                                             class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0"
                                             viewBox="0 0 12 12"
@@ -156,19 +142,28 @@
                                         <li>
                                             <a
                                                 class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
-                                                href="help.html"
+                                                href="characters.html"
                                                 @focus="open = true"
                                                 @focusout="open = false"
-                                                >Help center</a
+                                                >Characters</a
                                             >
                                         </li>
                                         <li>
                                             <a
                                                 class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
-                                                href="404.html"
+                                                href="embers.html"
                                                 @focus="open = true"
                                                 @focusout="open = false"
-                                                >404</a
+                                                >Embers</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
+                                                href="abilities.html"
+                                                @focus="open = true"
+                                                @focusout="open = false"
+                                                >Abilities</a
                                             >
                                         </li>
                                     </ul>
@@ -234,8 +229,8 @@
                                 <li>
                                     <a
                                         class="btn-sm text-white bg-teal-500 hover:bg-teal-400 ml-6"
-                                        href="contact.html"
-                                        >Support</a
+                                        href="#"
+                                        >Download The App</a
                                     >
                                 </li>
                             </ul>
@@ -443,7 +438,7 @@
                                             <a
                                                 class="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out"
                                                 href="contact.html"
-                                                >Support</a
+                                                >Request code</a
                                             >
                                         </li>
                                     </ul>
@@ -704,26 +699,149 @@
                                 </div>
                             </div>
 
+                            <!-- Legendary Character Abilities Section -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 mb-16">
+                                <h3 class="text-2xl font-bold mb-6 text-center font-red-hat-display">Legendary Character Abilities</h3>
+                                <div class="max-w-4xl mx-auto space-y-12">
+                                    
+                                    <!-- Kestra's Signature -->
+                                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                                        <div class="grid md:grid-cols-2">
+                                            <div class="bg-gradient-to-br from-red-500 to-pink-600 p-8 text-white">
+                                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                                        <path d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                                    </svg>
+                                                </div>
+                                                <h3 class="text-2xl font-bold mb-3 font-red-hat-display">Phoenix Incarnation</h3>
+                                                <div class="space-y-2 text-red-100">
+                                                    <p><strong>Hero:</strong> Kestra the Emberweaver</p>
+                                                    <p><strong>Type:</strong> Ultimate</p>
+                                                    <p><strong>Cost:</strong> 12 Ember</p>
+                                                    <p><strong>Cooldown:</strong> Once per battle</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-8">
+                                                <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Effect Description</h4>
+                                                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                                                    Kestra transforms into a blazing phoenix, gaining flight, immunity to damage for 3 turns, and causing all her abilities to inflict massive fire damage in large areas. Upon transformation end, creates a devastating explosion.
+                                                </p>
+                                                <div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+                                                    <h5 class="font-bold text-red-800 dark:text-red-300 mb-2">Character Enhancement</h5>
+                                                    <p class="text-red-700 dark:text-red-400 text-sm">
+                                                        With Phoenix Ember equipped: Transformation lasts 5 turns and resurrects fallen allies.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Theron's Signature -->
+                                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                                        <div class="grid md:grid-cols-2">
+                                            <div class="bg-gradient-to-br from-blue-500 to-teal-600 p-8 text-white order-2 md:order-1">
+                                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                                    </svg>
+                                                </div>
+                                                <h3 class="text-2xl font-bold mb-3 font-red-hat-display">Eternal Aegis</h3>
+                                                <div class="space-y-2 text-blue-100">
+                                                    <p><strong>Hero:</strong> Theron the Aegis Guard</p>
+                                                    <p><strong>Type:</strong> Ultimate</p>
+                                                    <p><strong>Cost:</strong> 10 Ember</p>
+                                                    <p><strong>Cooldown:</strong> Once per battle</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-8 order-1 md:order-2">
+                                                <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Effect Description</h4>
+                                                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                                                    Creates an unbreakable shield dome that protects the entire party for 4 turns. While active, all damage is redirected to Theron, who becomes invulnerable and reflects 200% damage back to attackers.
+                                                </p>
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+                                                    <h5 class="font-bold text-blue-800 dark:text-blue-300 mb-2">Character Enhancement</h5>
+                                                    <p class="text-blue-700 dark:text-blue-400 text-sm">
+                                                        With Guardian Ember equipped: Dome also heals allies and grants damage immunity after effect ends.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lyara's Signature -->
+                                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-xl overflow-hidden">
+                                        <div class="grid md:grid-cols-2">
+                                            <div class="bg-gradient-to-br from-green-500 to-emerald-600 p-8 text-white">
+                                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                                    </svg>
+                                                </div>
+                                                <h3 class="text-2xl font-bold mb-3 font-red-hat-display">Genesis Bloom</h3>
+                                                <div class="space-y-2 text-green-100">
+                                                    <p><strong>Hero:</strong> Lyara the Lifebinder</p>
+                                                    <p><strong>Type:</strong> Ultimate</p>
+                                                    <p><strong>Cost:</strong> 8 Ember</p>
+                                                    <p><strong>Cooldown:</strong> Once per battle</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-8">
+                                                <h4 class="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Effect Description</h4>
+                                                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                                                    Causes magical flowers to bloom across the battlefield, fully healing all allies, removing all debuffs, and creating healing zones that restore health each turn. Also resurrects any fallen allies at full health.
+                                                </p>
+                                                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+                                                    <h5 class="font-bold text-green-800 dark:text-green-300 mb-2">Character Enhancement</h5>
+                                                    <p class="text-green-700 dark:text-green-400 text-sm">
+                                                        With Life Ember equipped: Flowers grant temporary invincibility and double ember regeneration.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                             <!-- Call to Action -->
                             <div class="text-center">
                                 <h3 class="text-2xl font-bold mb-4 font-red-hat-display">Choose Your Hero</h3>
                                 <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">Each hero brings unique strengths to the battlefield. Master their abilities and lead the rebellion to victory.</p>
-                                <a
-                                    class="btn text-white bg-teal-500 hover:bg-teal-400 inline-flex items-center"
-                                    href="index.html"
-                                >
-                                    <span>Back to Home</span>
-                                    <svg
-                                        class="w-3 h-3 shrink-0 mt-px ml-2"
-                                        viewBox="0 0 12 12"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                    <a
+                                        class="btn text-white bg-teal-500 hover:bg-teal-400 inline-flex items-center"
+                                        href="abilities.html"
                                     >
-                                        <path
-                                            class="fill-current"
-                                            d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z"
-                                        />
-                                    </svg>
-                                </a>
+                                        <span>Explore Abilities</span>
+                                        <svg
+                                            class="w-3 h-3 shrink-0 mt-px ml-2"
+                                            viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                class="fill-current"
+                                                d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a
+                                        class="btn text-gray-600 bg-gray-100 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 inline-flex items-center"
+                                        href="index.html"
+                                    >
+                                        <span>Back to Home</span>
+                                        <svg
+                                            class="w-3 h-3 shrink-0 mt-px ml-2"
+                                            viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                class="fill-current"
+                                                d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
 
                         </div>
@@ -847,43 +965,6 @@
                                 <!-- 2nd block -->
                                 <div class="text-sm">
                                     <h6 class="font-medium uppercase mb-2">
-                                        Resources
-                                    </h6>
-                                    <ul>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="support.html"
-                                                >Contact Support</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="help.html"
-                                                >Tutorials & guides</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Download on iOS</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Download on Android</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- 3rd block -->
-                                <div class="text-sm">
-                                    <h6 class="font-medium uppercase mb-2">
                                         Lore
                                     </h6>
                                     <ul>
@@ -911,67 +992,23 @@
                                     </ul>
                                 </div>
 
-                                <!-- 4th block -->
+                                <!-- 3rd block -->
                                 <div class="text-sm">
                                     <h6 class="font-medium uppercase mb-2">
-                                        Company
+                                        Resources
                                     </h6>
                                     <ul>
                                         <li class="mb-1">
                                             <a
                                                 class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Diversity & inclusion</a
+                                                href="contact.html"
+                                                >Contact Support</a
                                             >
                                         </li>
                                         <li class="mb-1">
                                             <a
                                                 class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >About us</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Press</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Customer stories</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Online communities</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- 5th block -->
-                                <div class="text-sm">
-                                    <h6 class="font-medium uppercase mb-2">
-                                        Support
-                                    </h6>
-                                    <ul>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Documentation</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
+                                                href="help.html"
                                                 >Tutorials & guides</a
                                             >
                                         </li>
@@ -979,14 +1016,7 @@
                                             <a
                                                 class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
                                                 href="#0"
-                                                >Webinars</a
-                                            >
-                                        </li>
-                                        <li class="mb-1">
-                                            <a
-                                                class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                                                href="#0"
-                                                >Open-source</a
+                                                >Download on iOS</a
                                             >
                                         </li>
                                     </ul>
@@ -998,23 +1028,6 @@
                         <div class="md:flex md:items-center md:justify-between">
                             <!-- Social links -->
                             <ul class="flex mb-4 md:order-2 md:ml-4 md:mb-0">
-                                <li>
-                                    <a
-                                        class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
-                                        href="#0"
-                                        aria-label="Twitter"
-                                    >
-                                        <svg
-                                            class="w-8 h-8 fill-current"
-                                            viewBox="0 0 32 32"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li>
                                 <li class="ml-4">
                                     <a
                                         class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
@@ -1045,31 +1058,6 @@
                                         >
                                             <path
                                                 d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="ml-4">
-                                    <a
-                                        class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
-                                        href="#0"
-                                        aria-label="Instagram"
-                                    >
-                                        <svg
-                                            class="w-8 h-8 fill-current"
-                                            viewBox="0 0 32 32"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <circle
-                                                cx="20.145"
-                                                cy="11.892"
-                                                r="1"
-                                            />
-                                            <path
-                                                d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z"
-                                            />
-                                            <path
-                                                d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z"
                                             />
                                         </svg>
                                     </a>
@@ -1114,7 +1102,7 @@
                             <div
                                 class="text-gray-600 dark:text-gray-400 text-sm mr-4"
                             >
-                                &copy; Cruip.com. All rights reserved.
+                                &copy; Gridfall Chronicles. All rights reserved.
                             </div>
                         </div>
                     </div>
