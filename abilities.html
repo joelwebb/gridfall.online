@@ -53,15 +53,11 @@
 
                         <!-- Desktop menu links -->
                         <ul class="flex grow flex-wrap items-center font-medium">
+                           
                             <li>
-                                <a class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="about.html">About</a>
+                                <a class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="contact.html">Support</a>
                             </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out" href="testimonials.html">Testimonials</a>
-                            </li>
+                           
                             <!-- 1st level: hover -->
                             <li
                                 class="relative"
@@ -78,7 +74,7 @@
                                     @focusout="open = false"
                                     @click.prevent
                                 >
-                                    Resources
+                                    Lore
                                     <svg class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
                                     </svg>
@@ -96,10 +92,13 @@
                                     x-cloak
                                 >
                                     <li>
-                                        <a class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight" href="help.html" @focus="open = true" @focusout="open = false">Help center</a>
+                                        <a class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight" href="characters.html" @focus="open = true" @focusout="open = false">Characters</a>
                                     </li>
                                     <li>
-                                        <a class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight" href="404.html" @focus="open = true" @focusout="open = false">404</a>
+                                        <a class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight" href="embers.html" @focus="open = true" @focusout="open = false">Embers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight" href="abilities.html" @focus="open = true" @focusout="open = false">Abilities</a>
                                     </li>
                                 </ul>
                             </li>
@@ -125,7 +124,7 @@
                         <!-- Desktop CTA on the right -->
                         <ul class="flex justify-end flex-wrap items-center">
                             <li>
-                                <a class="btn-sm text-white bg-teal-500 hover:bg-teal-400 ml-6" href="contact.html">Support</a>
+                                <a class="btn-sm text-white bg-teal-500 hover:bg-teal-400 ml-6" href="#">Download The App</a>
                             </li>
                         </ul>
 
@@ -223,7 +222,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out" href="contact.html">Support</a>
+                                        <a class="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out" href="contact.html">Request code</a>
                                     </li>
                                 </ul>
                             </div>
@@ -590,23 +589,15 @@
                         <div class="md:col-span-10 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8">
 
                             <!-- 2nd block -->
-                            <div class="text-sm">
-                                <h6 class="font-medium uppercase mb-2">Resources</h6>
+                            <!-- <div class="text-sm">
+                                <h6 class="font-medium uppercase mb-2">Application</h6>
                                 <ul>
                                     <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="support.html">Contact Support</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="help.html">Tutorials & guides</a>
-                                    </li>
-                                    <li class="mb-1">
                                         <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Download on iOS</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Download on Android</a>
+
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
 
                             <!-- 3rd block -->
                             <div class="text-sm">
@@ -626,43 +617,31 @@
                             </div>
 
                             <!-- 4th block -->
-                            <div class="text-sm">
+                            <!-- <div class="text-sm">
                                 <h6 class="font-medium uppercase mb-2">Company</h6>
                                 <ul>
                                     <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Diversity & inclusion</a>
                                     </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">About us</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Press</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Customer stories</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Online communities</a>
-                                    </li>
+                                
+                                   
                                 </ul>
-                            </div>
+                            </div> -->
 
                             <!-- 5th block -->
                             <div class="text-sm">
-                                <h6 class="font-medium uppercase mb-2">Support</h6>
+                                <h6 class="font-medium uppercase mb-2">Resources</h6>
                                 <ul>
                                     <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Documentation</a>
+                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="contact.html">Contact Support</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Tutorials & guides</a>
+                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="help.html">Tutorials & guides</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Webinars</a>
+                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Download on iOS</a>
+
                                     </li>
-                                    <li class="mb-1">
-                                        <a class="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="#0">Open-source</a>
-                                    </li>
+
                                 </ul>
                             </div>
 
@@ -675,13 +654,7 @@
 
                         <!-- Social links -->
                         <ul class="flex mb-4 md:order-2 md:ml-4 md:mb-0">
-                            <li>
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Twitter">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
-                                    </svg>
-                                </a>
-                            </li>
+                         
                             <li class="ml-4">
                                 <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Github">
                                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -693,15 +666,6 @@
                                 <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Facebook">
                                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ml-4">
-                                <a class="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Instagram">
-                                    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.145" cy="11.892" r="1" />
-                                        <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
-                                        <path d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z" />
                                     </svg>
                                 </a>
                             </li>
@@ -720,7 +684,7 @@
                         </div>
 
                         <!-- Copyrights note -->
-                        <div class="text-gray-600 dark:text-gray-400 text-sm mr-4">&copy; Cruip.com. All rights reserved.</div>
+                        <div class="text-gray-600 dark:text-gray-400 text-sm mr-4">&copy; Gridfall Chronicles. All rights reserved.</div>
 
                     </div>
 
