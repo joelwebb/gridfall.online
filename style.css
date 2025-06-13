@@ -2763,11 +2763,6 @@ input[type=range]::-moz-focus-outer {
   color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
-.text-gray-300{
-  --tw-text-opacity: 1;
-  color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(162 162 168 / var(--tw-text-opacity));
