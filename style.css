@@ -3738,10 +3738,6 @@ input[type=range]::-moz-focus-outer {
     display: none;
   }
 
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
   .md\:w-1\/4{
     width: 25%;
   }
